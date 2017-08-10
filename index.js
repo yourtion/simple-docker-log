@@ -45,5 +45,5 @@ syslogd((info) => {
   console.log(`syslogd is started at ${ PORT }`);
   setInterval(() => {
     flush(() => {});
-  }, 2000);
+  }, 1000);
 });
