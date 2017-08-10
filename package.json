@@ -1,0 +1,14 @@
+{
+  "name": "simple-docker-log",
+  "version": "1.0.0",
+  "description": "Simple Docker log to file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yourtion <yourtion@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "syslogd": "^1.1.2"
+  }
+}
