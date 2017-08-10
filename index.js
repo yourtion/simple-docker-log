@@ -40,6 +40,7 @@ function flush (callback) {
 };
 
 syslogd((info) => {
+  console.log(JSON.stringify(info));
   logs.push(info.msg);
 }).listen(PORT, (err) => {
   console.log(`syslogd is started at ${ PORT }`);
