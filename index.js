@@ -29,8 +29,7 @@ function flush (callback) {
   if (logs < 1) return callback();
 
   const date = new Date();
-  const filename = date.yyyymmdd() + '.log'
-  filename = path.resolve(LOG_PATH, filename);
+  const filename = path.resolve(LOG_PATH, date.yyyymmdd() + '.log');
 
   const lines = logs.splice(0, logs.length).join("");
   fs.createWriteStream(filename, {
