@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  syslogd:
+    privileged: false
+    network_mode: bridge
+    build: .
+    volumes:
+      - ./logs:/app/logs
+    ports:
+      - 514:514/udp
